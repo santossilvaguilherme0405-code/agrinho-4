@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tecnologia Sustentável 2026</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="top-bar">
+        <button onclick="alterarZoom(1.1)">A+</button>
+        <button onclick="alterarZoom(0.9)">A-</button>
+        <button id="btn-theme">🌓 Tema</button>
+        <button id="btn-reset">🔄 Reiniciar</button>
+    </div>
+
+    <header class="hero-banner">
+        <div class="hero-text">
+            <h2>TECNOLOGIA NO CAMPO</h2>
+            <p>Inovação e Equilíbrio para o Futuro</p>
+        </div>
+    </header>
+
+    <main>
+        <section class="card-container">
+            <h3>Soluções Inteligentes</h3>
+            <p>Clique para descobrir como a tecnologia resolve problemas reais:</p>
+            <div id="lista-problemas" class="botoes-flex"></div>
+            <div class="feedback-box">
+                <p id="texto-resposta">Selecione um tópico para começar.</p>
+            </div>
+        </section>
+
+        <section class="card-container" id="galeria">
+            <h3>Galeria de Inovações</h3>
+            <div class="galeria-grid">
+                
+                <div class="item-galeria">
+                    <div class="moldura-foto">
+                        <img src="https://images.unsplash.com/photo-1591735159484-6fe3e6e8aef3?w=600" alt="Drone">
+                        <span class="tag-ia">Gerado por IA</span>
+                    </div>
+                    <h4>Monitoramento Aéreo</h4>
+                    <p>Drones que analisam a saúde da plantação via infravermelho.</p>
+                </div>
+
+                <div class="item-galeria">
+                    <div class="moldura-foto">
+                        <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?w=600" alt="Hidroponia">
+                        <span class="tag-ia">Gerado por IA</span>
+                    </div>
+                    <h4>Hidroponia Avançada</h4>
+                    <p>Produção sustentável com reaproveitamento total de água.</p>
+                </div>
+
+                <div class="item-galeria">
+                    <div class="moldura-foto">
+                        <img src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?w=600" alt="Energia Solar">
+                        <span class="tag-ia">Gerado por IA</span>
+                    </div>
+                    <h4>Energia Limpa</h4>
+                    <p>Fazendas movidas a energia solar para reduzir emissões.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="card-container">
+            <h3>Desafio Tecnológico</h3>
+            <p>O uso de drones ajuda a reduzir o uso de agrotóxicos?</p>
+            <div class="quiz-botoes">
+                <button onclick="verificarQuiz(true)">Sim, com certeza</button>
+                <button onclick="verificarQuiz(false)">Não ajuda</button>
+            </div>
+            <p id="quiz-resultado"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 - Tecnologia e Sustentabilidade no Campo</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
